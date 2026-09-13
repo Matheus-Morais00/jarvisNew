@@ -1,3 +1,4 @@
+
 name: JARVIS Android Build
 
 on:
@@ -11,10 +12,6 @@ permissions:
   contents: read
 
 env:
-  # O pubspec.yaml exige Dart SDK >=3.13.2 (environment: sdk: ^3.13.2).
-  # O Flutter 3.35.3 traz o Dart 3.9.2, que é MAIS ANTIGO que o exigido,
-  # e por isso o "flutter pub get" falhava com erro de version solving.
-  # O Flutter 3.47.2 traz o Dart 3.13.x, que satisfaz a exigência.
   FLUTTER_VERSION: '3.47.2'
 
 jobs:
